@@ -1,0 +1,53 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::after,*::before{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: $veryDarkBlue;
+    color:$white;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Public Sans', sans-serif;
+    font-family: 'Spartan', sans-serif;
+}
+
+
+.flex{
+    display: flex;
+
+    &-jc-sb{
+        justify-content: space-between;
+    }
+
+    &-ai-c{
+        align-items: center;
+    }
+
+    &-fd-c{
+        flex-direction: column;
+    }
+
+}
+
+
+
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+   
+    &-jc-sb{
+        justify-content: space-between;
+    }
+
+    &-ai-c{
+        align-items: center;
+    }
+
+}

@@ -1,0 +1,841 @@
+.container__theme1{
+    background: $veryDarkBlue;
+    .header{
+
+        height: 19.3125rem;
+        background:$veryDarkBluey;
+        padding-top: 1.7rem;
+        border-radius:0 0 40px 40px;
+    
+        @include breakpoint-down(medium){
+           max-width: 1024px;
+           margin:0 auto;
+        }  
+    
+        @include breakpoint-down(small){
+            padding-top: 1.7rem;
+        }
+    
+    
+        &__header{
+            width: 100%;
+            max-width: 1440px;
+            margin:0 auto;
+    
+            @include breakpoint-down(medium){
+    
+    
+                width:100%;
+                max-width: 1024px;
+                margin:0 auto;
+                padding:0 4rem;
+    
+    
+            }
+    
+            @include breakpoint-down(small){
+                width: 300px;
+                width:100%;
+                padding: 0 1rem;
+                max-width: 500px;
+                margin:0 auto;
+                display: block;
+            }
+    
+        }
+        &__text{
+            >h1{
+                font-weight: 900;
+                font-size: 2.375rem;
+    
+                @include breakpoint-down(small){
+                    font-weight: 900;
+                    font-size: 1.405rem;
+                }
+    
+            }
+    
+            > h3{
+                margin-top:-1.325rem;
+                margin-bottom: 2.11875rem;
+                font-weight: 600;
+                color:$desaturatedBlue;
+                font-size: 1.1875rem;
+    
+                @include breakpoint-down(small){
+                    margin-top:0.5rem;
+                    font-size: 0.9rem;
+                    
+                }
+    
+            }
+    
+            @include breakpoint-down(small){
+                border-bottom: 1px $desaturatedBlue solid;
+            }
+        }
+    
+        &__darkmode{
+    
+            @include breakpoint-down(small){
+                justify-content: space-between;
+                margin-top: 1rem;
+            }
+            .dark{
+                outline: none;
+                border: none;
+                background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+                padding: 0.30rem 0.95rem 0.25rem 1.55rem;
+                border-radius: 50px;
+                cursor: pointer;
+    
+                .toggle-icon{
+                    background:$veryDarkBluey;
+                    border-radius:50%;
+                    width:1.22rem;
+                    height:1.22rem;
+                    padding:0.85rem;
+                    transform: translateX(-20px);
+                }
+                
+            }
+    
+            h2{
+                color:$desaturatedBlue;
+                font-size: 18px;
+                font-weight: bolder;
+                padding-right: 1rem;
+    
+                @include breakpoint-down(small){
+                    font-size: 20px;
+                    font-weight: 900;
+                }
+    
+            }
+            
+    
+    
+    
+        }
+    }
+    
+    
+    .section{
+    
+        width: 100%;
+        max-width: 1440px;
+        margin:0 auto;
+        cursor: pointer;
+    
+    
+        @include breakpoint-down(medium){
+            width:100%;
+            max-width: 1024px;
+            margin:0 auto;
+            padding:0 4rem;
+         }
+    
+    
+         @include breakpoint-down(small){
+            margin:3.5rem auto;
+    
+            width:100%;
+            padding: 0 1rem;
+            max-width: 500px;
+    
+         }
+        
+    
+        &__wrapper{
+            margin-top: -7rem;
+            @include breakpoint-down(medium){
+                grid-template-columns: 1fr 1fr;
+                gap: 2.5rem;
+            }
+    
+    
+            @include breakpoint-down(small){
+                grid-template-columns: 1fr;
+            }
+        }
+    
+    
+        &__facebook, &__twitter, &__instagram, &__youtube{
+    
+            padding: 1.5rem 0rem;
+            background:$darkDesaturatedBlue;
+            height:310px;
+            // width:340px;
+            text-align: center;
+            display:flex;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 0.5rem;
+    
+    
+            position:relative;
+    
+            &::before{
+                position: absolute;
+                content: '';
+                height:0.3125rem;
+                width: 100%;
+                top:0;
+                left: 0;
+                right:0;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                background:$facebook;
+            }
+    
+    
+            &:hover{
+                background: $darkGrayishBlue;
+            }
+        }
+    
+        &__twitter{
+            &::before{
+                background: $twitter;
+            }
+        }
+    
+        &__instagram{
+            &::before{
+                background: $instagram;
+            }
+        }
+    
+        &__youtube{
+            &::before{
+                background: $youTube;
+            }
+        }
+        
+    
+        &__image{
+            display:flex;
+            align-items: center;
+            >img{
+                width: 30px;
+                margin-right: 0.5rem;
+            }
+            
+        }
+    
+        &__followers{
+            margin-top: -2rem;
+    
+            h1{
+                font-size: 4rem;
+            }
+    
+            h2{
+                margin-top: -45px;
+                font-weight: 500;
+                text-align: center;
+                letter-spacing: 3px;
+                font-size: 13px;
+                color:$desaturatedBlue;
+                text-transform: uppercase;
+                letter-spacing: 0.4rem;
+            }
+    
+        }
+    
+        &__count{
+            padding-top: 0.5rem;
+            color: $limeGreen;
+    
+           
+            img{
+                width: 10px;
+            }
+    
+            h5{
+                font-size: 14px;
+                margin-left: 0.3rem;
+                font-weight: 600;
+            }
+        }
+    
+        &__counts{
+            color:$brightRed;
+        }
+    }
+    
+    .content{
+    
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto 3rem auto;
+    
+    
+        &__overview{
+    
+            font-size: 1.3rem;
+            font-weight: 700;
+    
+            h1{
+                margin-top: 3rem;
+            }
+    
+            @include breakpoint-down(medium){
+    
+                width:100%;
+                max-width: 1024px;
+                margin:0 auto;
+                padding:0 4rem;
+            
+            }
+    
+            @include breakpoint-down(small){
+                font-size: 17px;
+                width: 300px;
+                width:100%;
+                padding: 0 1.5rem;
+                max-width: 500px;
+                margin:0 auto;
+                display: block;
+            }
+    
+        }
+    
+        &__card{
+    
+    
+        }
+    
+        &__container{
+            @include breakpoint-down(medium){
+    
+                width:100%;
+                max-width: 1024px;
+                margin:0 auto;
+                padding:0 4rem;
+                grid-template-columns: 1fr 1fr;
+            }
+    
+    
+            
+            @include breakpoint-down(small){
+                width: 300px;
+                width:100%;
+                padding: 0 1.5rem;
+                max-width: 500px;
+                margin:0 auto;
+                display: block;
+            }
+    
+            
+    
+        }
+    
+        .cards{
+            margin-top:1rem;
+            background: $darkDesaturatedBlue;
+            border-radius: 5px;        
+            cursor: pointer;
+            min-height: 10.05rem;
+    
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+    
+            // padding: 4rem;
+            padding-top:1.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+    
+            &:hover{
+                background: $darkGrayishBlue;
+            }
+    
+            
+        }
+    
+        &__page{
+            font-size: 17px;
+            color: $desaturatedBlue;
+            font-size: 800;
+            padding-top: 0.3rem;
+    
+            img{
+                width: 10%;
+            }
+        }
+    
+        &__percentage{
+            margin-top: 0.5rem;
+            padding-bottom: 0.3rem;
+            >div{
+                font-size: 32px;
+                font-weight: 600;
+            }
+        }
+    
+        &__icon{
+            font-size: 20px;
+            color: $limeGreen;
+            img{
+                width: 15px;
+                margin-right: 0.5rem;
+            }
+        }
+    
+        .one{
+    
+            > div:nth-child(2){
+               >span{
+                   color:$brightRed;
+               }
+            }
+    
+        }
+    
+        .six{
+    
+            > div:nth-child(2){
+                >span{
+                    color:$brightRed;
+                }
+             }
+    
+        }
+    
+    
+    
+    }
+}
+
+.container__theme2{
+    background: $white;
+    .header{
+
+        height: 19.3125rem;
+        background:$veryPaleBlue;
+        border-radius:0 0 40px 40px;
+        padding-top: 1.7rem;
+    
+        @include breakpoint-down(medium){
+           max-width: 1024px;
+           margin:0 auto;
+        }
+    
+    
+        @include breakpoint-down(small){
+            padding-top: 1.7rem;
+        }
+    
+    
+        &__header{
+            width: 100%;
+            max-width: 1440px;
+            margin:0 auto;
+    
+            @include breakpoint-down(medium){
+    
+    
+                width:100%;
+                max-width: 1024px;
+                margin:0 auto;
+                padding:0 4rem;
+    
+    
+            }
+    
+    
+            @include breakpoint-down(small){
+                width: 300px;
+                width:100%;
+                padding: 0 1rem;
+                max-width: 500px;
+                margin:0 auto;
+                display: block;
+            }
+    
+        }
+        &__text{
+            >h1{
+                font-weight: 900;
+                font-size: 2.375rem;
+
+
+                color:$veryDarkBlues;
+                font-weight: 600 !important;
+    
+                @include breakpoint-down(small){
+                    font-weight: 900;
+                    font-size: 1.405rem;
+                }
+    
+            }
+    
+            > h3{
+                margin-top:-1.325rem;
+                margin-bottom: 2.11875rem;
+                font-weight: 600;
+                color:$darkGrayishBlue;
+                font-size: 1.1875rem;
+    
+                @include breakpoint-down(small){
+                    margin-top:0.5rem;
+                    font-size: 0.9rem;
+                    
+                }
+    
+            }
+    
+            @include breakpoint-down(small){
+                border-bottom: 1px $desaturatedBlue solid;
+            }
+        }
+    
+        &__darkmode{
+    
+            @include breakpoint-down(small){
+                justify-content: space-between;
+                margin-top: 1rem;
+            }
+            .dark{
+                outline: none;
+                border: none;
+                background: $darkGrayishBlue;
+                padding: 0.3rem 0.85rem 0.25rem 1.55rem;
+                border-radius: 50px;
+                cursor: pointer;
+    
+                .toggle-icon{
+                    background:$white;
+                    border-radius:50%;
+                    width:1.42rem;
+                    height:1.42rem;
+                    transform: translateX(13px);
+                    padding: 0.8rem;
+
+
+
+
+                    width:1.42rem;
+                    height:1.42rem;
+
+
+
+                }
+
+                
+            }
+    
+            h2{
+                color:$darkGrayishBlue;
+                font-size: 18px;
+                font-weight: bolder;
+                padding-right: 1rem;
+    
+                @include breakpoint-down(small){
+                    font-size: 20px;
+                    font-weight: 900;
+                }
+    
+            }
+            
+    
+    
+    
+        }
+    }
+    
+    
+    .section{
+    
+        width: 100%;
+        max-width: 1440px;
+        margin:0 auto;
+        cursor: pointer;
+    
+    
+        @include breakpoint-down(medium){
+            width:100%;
+            max-width: 1024px;
+            margin:0 auto;
+            padding:0 4rem;
+         }
+    
+    
+         @include breakpoint-down(small){
+            margin:3.5rem auto;
+    
+            width:100%;
+            padding: 0 1rem;
+            max-width: 500px;
+    
+         }
+        
+    
+        &__wrapper{
+            margin-top: -7rem;
+            @include breakpoint-down(medium){
+                grid-template-columns: 1fr 1fr;
+                gap: 2.5rem;
+            }
+    
+    
+            @include breakpoint-down(small){
+                grid-template-columns: 1fr;
+            }
+        }
+    
+    
+        &__facebook, &__twitter, &__instagram, &__youtube{
+    
+            padding: 1.5rem 0rem;
+            background:$lightGrayishBlue;
+            // background: $veryPaleBlue;
+            height:310px;
+            // width:340px;
+            text-align: center;
+            display:flex;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 0.5rem;
+    
+    
+            position:relative;
+    
+            &::before{
+                position: absolute;
+                content: '';
+                height:0.3125rem;
+                width: 100%;
+                top:0;
+                left: 0;
+                right:0;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                background:$facebook;
+            }
+    
+    
+            &:hover{
+                background:$cardHover;
+            }
+        }
+    
+        &__twitter{
+            &::before{
+                background: $twitter;
+            }
+        }
+    
+        &__instagram{
+            &::before{
+                background: $instagram;
+            }
+        }
+    
+        &__youtube{
+            &::before{
+                background: $youTube;
+            }
+        }
+        
+    
+        &__image{
+            display:flex;
+            align-items: center;
+            color:$darkGrayishBlue;
+            >img{
+                width: 30px;
+                margin-right: 0.5rem;
+            }
+            
+        }
+    
+        &__followers{
+            margin-top: -2rem;
+    
+            h1{
+                font-size: 4rem;
+                color: $veryDarkBlues;
+            }
+    
+            h2{
+                margin-top: -45px;
+                font-weight: 500;
+                text-align: center;
+                letter-spacing: 3px;
+                font-size: 13px;
+                color:$desaturatedBlue;
+                text-transform: uppercase;
+                letter-spacing: 0.4rem;
+                font-weight: 600;
+            }
+    
+        }
+    
+        &__count{
+            padding-top: 0.5rem;
+            color: $limeGreen;
+    
+           
+            img{
+                width: 10px;
+            }
+    
+            h5{
+                font-size: 14px;
+                margin-left: 0.3rem;
+                font-weight: 600;
+            }
+        }
+    
+        &__counts{
+            color:$brightRed;
+        }
+    }
+    
+    .content{
+    
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto 3rem auto;
+    
+    
+        &__overview{
+    
+            font-size: 1.3rem;
+            font-weight: 700;
+    
+            h1{
+                margin-top: 3rem;
+                color:$darkGrayishBlue;
+            }
+    
+            @include breakpoint-down(medium){
+    
+                width:100%;
+                max-width: 1024px;
+                margin:0 auto;
+                padding:0 4rem;
+            
+            }
+    
+            @include breakpoint-down(small){
+                font-size: 17px;
+                width: 300px;
+                width:100%;
+                padding: 0 1rem;
+                max-width: 500px;
+                margin:0 auto;
+                display: block;
+            }
+    
+        }
+    
+        &__card{
+    
+    
+        }
+    
+        &__container{
+            @include breakpoint-down(medium){
+    
+                width:100%;
+                max-width: 1024px;
+                margin:0 auto;
+                padding:0 4rem;
+                grid-template-columns: 1fr 1fr;
+            }
+    
+    
+            
+            @include breakpoint-down(small){
+                width: 300px;
+                width:100%;
+                padding: 0 1rem;
+                max-width: 500px;
+                margin:0 auto;
+                display: block;
+            }
+    
+            
+    
+        }
+    
+        .cards{
+            margin-top:1rem;
+            background: $lightGrayishBlue;
+            border-radius: 5px;        
+            cursor: pointer;
+            min-height: 10.05rem;
+    
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+    
+            // padding: 4rem;
+            padding-top:1.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+    
+            &:hover{
+                background:$cardHover;
+            }
+    
+            
+        }
+    
+        &__page{
+            font-size: 17px;
+            color: $darkGrayishBlue;
+            font-size: 800;
+            padding-top: 0.3rem;
+    
+            img{
+                width: 10%;
+            }
+        }
+    
+        &__percentage{
+            margin-top: 0.5rem;
+            padding-bottom: 0.3rem;
+            >div{
+                font-size: 32px;
+                color: $veryDarkBlues;
+                font-weight: 600;
+            }
+        }
+    
+        &__icon{
+            font-size: 20px;
+            color: $limeGreen;
+            img{
+                width: 15px;
+                margin-right: 0.5rem;
+            }
+        }
+    
+        .one{
+    
+            > div:nth-child(2){
+               >span{
+                   color:$brightRed;
+               }
+            }
+    
+        }
+    
+        .six{
+    
+            > div:nth-child(2){
+                >span{
+                    color:$brightRed;
+                }
+             }
+    
+        }
+    
+    
+    
+    }
+}

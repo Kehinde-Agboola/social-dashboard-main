@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="app/scss/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Public+Sans:wght@300&family=Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="app/scss/style.css" />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container__theme1">
+      <section class="header">
+        <div class="container">
+          <div class="header__header flex flex-jc-sb flex-ai-c">
+            <div class="header__text">
+              <h1>Social Media Dashboard</h1>
+              <h3>Total Followers:23,004</h3>
+            </div>
+
+            <div class="header__darkmode flex flex-ai-c">
+              <h2>Dark Mode</h2>
+              <button class="dark">
+                <div class="toggle-icon"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__wrapper grid">
+          <div class="section__facebook">
+            <div class="section__image flex flex-ai-c">
+              <img src="./images/icon-facebook.svg" alt="facebook" />
+              <h4>@nathanf</h4>
+            </div>
+
+            <div class="section__followers">
+              <h1>1987</h1>
+              <h2>Followers</h2>
+            </div>
+
+            <div class="section__count flex flex-ai-c">
+              <img src="./images/icon-up.svg" alt="icon down" />
+              <h5>12 Today</h5>
+            </div>
+          </div>
+
+          <div class="section__twitter">
+            <div class="section__image flex flex-ai-c">
+              <img src="./images/icon-twitter.svg" alt="twitter" />
+              <h4>@nathanf</h4>
+            </div>
+
+            <div class="section__followers">
+              <h1>1044</h1>
+              <h2>Followers</h2>
+            </div>
+
+            <div class="section__count flex flex-ai-c">
+              <img src="./images/icon-up.svg" alt="icon down" />
+              <h5>99 Today</h5>
+            </div>
+          </div>
+
+          <div class="section__instagram">
+            <div class="section__image flex flex-ai-c">
+              <img src="./images/icon-instagram.svg" alt="instagram" />
+              <h4>@nathanf</h4>
+            </div>
+
+            <div class="section__followers">
+              <h1>11K</h1>
+              <h2>Followers</h2>
+            </div>
+
+            <div class="section__count flex flex-ai-c">
+              <img src="./images/icon-up.svg" alt="icon down" />
+              <h5>1099 Today</h5>
+            </div>
+          </div>
+
+          <div class="section__youtube">
+            <div class="section__image flex flex-ai-c">
+              <img src="./images/icon-youtube.svg" alt="youtube" />
+              <h4>Nathan F.</h4>
+            </div>
+
+            <div class="section__followers">
+              <h1>8239</h1>
+              <h2>SUBSCRIBERS</h2>
+            </div>
+
+            <div class="section__counts flex flex-ai-c">
+              <img src="./images/icon-down.svg" alt="icon down" />
+              <h5>144 Today</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="content__overview">
+          <h1>Overview - Today</h1>
+        </div>
+
+        <div class="content__card">
+          <div class="content__container grid">
+            <div class="content__contain cards">
+              <div class="content__page flex flex-ai-c flex-jc-sb">
+                <div><h3>Page Views</h3></div>
+                <img src="./images/icon-facebook.svg" alt="facebook" />
+              </div>
+
+              <div class="content__percentage flex flex-ai-c flex-jc-sb">
+                <div>87</div>
+                <span class="content__icon flex flex-ai-c">
+                  <img src="./images/icon-up.svg" alt="icon-up" />
+                  <h6>3%</h6>
+                </span>
+              </div>
+            </div>
+
+            <div class="content__contain cards one">
+              <div class="content__page flex flex-ai-c flex-jc-sb">
+                <div><h3>Likes</h3></div>
+                <img src="./images/icon-facebook.svg" alt="facebook" />
+              </div>
+
+              <div class="content__percentage flex flex-ai-c flex-jc-sb">
+                <div>52</div>
+                <span class="content__icon flex flex-ai-c">
+                  <img src="./images/icon-down.svg" alt="icon-up" />
+                  <h6>2%</h6>
+                </span>
+              </div>
+            </div>
+
+            <div class="content__contain cards two">
+              <div class="content__page flex flex-ai-c flex-jc-sb">
+                <div><h3>Likes</h3></div>
+                <img src="./images/icon-instagram.svg" alt="facebook" />
+              </div>
+
+              <div class="content__percentage flex flex-ai-c flex-jc-sb">
+                <div>5462</div>
+                <span class="content__icon flex flex-ai-c">
+                  <img src="./images/icon-up.svg" alt="icon-up" />
+                  <h6>2257%</h6>
+                </span>
+              </div>
+            </div>
+
+            <div class="content__contain cards three">
+              <div class="content__page flex flex-ai-c flex-jc-sb">
+                <div>Page Views</div>
+                <img src="./images/icon-instagram.svg" alt="facebook" />
+              </div>
+
+              <div class="content__percentage flex flex-ai-c flex-jc-sb">
+                <div>52K</div>
+                <span class="content__icon flex flex-ai-c">
+                  <img src="./images/icon-up.svg" alt="icon-up" />
+                  <h6>1375%</h6>
+                </span>
+              </div>
+            </div>
+
+            <div class="content__contain cards four">
+              <div class="content__page flex flex-ai-c flex-jc-sb">
+                <div>Retweets</div>
+                <img src="./images/icon-twitter.svg" alt="facebook" />
+              </div>
+
+              <div class="content__percentage flex flex-ai-c flex-jc-sb">
+                <div>117</div>
+                <span class="content__icon flex flex-ai-c">
+                  <img src="./images/icon-up.svg" alt="icon-up" />
+                  <h6>303%</h6>
+                </span>
+              </div>
+            </div>
+
+            <div class="content__contain cards five">
+              <div class="content__page flex flex-ai-c flex-jc-sb">
+                <div>Retweets</div>
+                <img src="./images/icon-twitter.svg" alt="facebook" />
+              </div>
+
+              <div class="content__percentage flex flex-ai-c flex-jc-sb">
+                <div>507</div>
+                <span class="content__icon flex flex-ai-c">
+                  <img src="./images/icon-up.svg" alt="icon-up" />
+                  <h6>553%</h6>
+                </span>
+              </div>
+            </div>
+
+            <div class="content__contain cards six">
+              <div class="content__page flex flex-ai-c flex-jc-sb">
+                <div>Likes</div>
+                <img src="./images/icon-youtube.svg" alt="facebook" />
+              </div>
+
+              <div class="content__percentage flex flex-ai-c flex-jc-sb">
+                <div>107</div>
+                <span class="content__icon flex flex-ai-c">
+                  <img src="./images/icon-down.svg" alt="icon-up" />
+                  <h6>19%</h6>
+                </span>
+              </div>
+            </div>
+
+            <div class="content__contain cards six">
+              <div class="content__page flex flex-ai-c flex-jc-sb">
+                <div>Total Views</div>
+                <img src="./images/icon-youtube.svg" alt="facebook" />
+              </div>
+
+              <div class="content__percentage flex flex-ai-c flex-jc-sb">
+                <div>1407</div>
+                <span class="content__icon flex flex-ai-c">
+                  <img src="./images/icon-down.svg" alt="icon-up" />
+                  <h6>12%</h6>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="attribution" style="font-size: 25px">
+      Coded by
+      <a
+        href="https://github.com/Oluwaseun-Oyewole/calcJS"
+        style="text-decoration: none"
+        >Kehinde Agboola Oluseyi</a
+      >
+    </div>
+
+    <script src="app/js/script.js"></script>
+  </body>
+</html>
